@@ -214,7 +214,7 @@ When the stream is closed, the subscriber MUST assume that all broadcasts are no
 Path prefix matching and equality is done on a byte-by-byte basis.
 There MAY be multiple Announce Streams, potentially containing overlapping prefixes, that get their own copy of each ANNOUNCE.
 
-## Subscribe
+### Subscribe
 A subscriber can open a Subscribe Stream to request a Track.
 
 The subscriber MUST start a Subscribe Stream with a SUBSCRIBE message followed by any number of SUBSCRIBE_UPDATE messages.
