@@ -231,7 +231,7 @@ The application is responsible for the encoding of the prefix, taking case to av
 
 There MAY be multiple Announce Streams, potentially containing overlapping prefixes, that get their own copy of each ANNOUNCE.
 
-## Subscribe
+### Subscribe
 A subscriber can open a Subscribe Stream to request a Track.
 
 The subscriber MUST start a Info Stream with a SUBSCRIBE message followed by any number SUBSCRIBE_UPDATE messages.
@@ -244,7 +244,7 @@ The subscriber SHOULD close the subscription when all GROUP and SUBSCRIBE_GAP me
 
 
 
-## Fetch
+### Fetch
 A subscriber can open a Fetch Stream to receive a single Group at a specified offset.
 This is primarily used to recover from an abrupt stream termination, causing the truncation of a Group.
 
@@ -255,7 +255,7 @@ Note that this includes any FRAME messages.
 The fetch is active until both endpoints close the stream, or either endpoint resets the stream.
 
 
-## Info
+### Info
 A subscriber can open an Info Stream to request information about a track.
 This is not often necessary as SUBSCRIBE will trigger an INFO reply.
 
